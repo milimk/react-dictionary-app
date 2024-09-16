@@ -3,7 +3,24 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">Dictionary App</header>
+      <header></header>
+      <main>
+        <h1>Dictionary App</h1>
+      </main>
+      <footer>
+        This project was coded by{" "}
+        <a href="https://github.com/milimk" target="_blank" rel="noreferrer">
+          MiliM
+        </a>{" "}
+        and it's{" "}
+        <a
+          href="https://github.com/milimk/react-dictionary-app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          open-sourced
+        </a>{" "}
+      </footer>
     </div>
   );
 }
