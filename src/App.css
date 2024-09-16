@@ -4,4 +4,17 @@
 
 .App footer {
   font-size: 13px;
+  text-align: center;
+  padding-top: 20px;
+  opacity: 0.8;
+}
+
+.App footer a {
+  color: brown;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.App footer a:hover {
+  text-decoration: underline;
 }

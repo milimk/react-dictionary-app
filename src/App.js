@@ -1,14 +1,12 @@
 import "./App.css";
+import Dictionary from "./Dictionary";
 
 function App() {
   return (
     <div className="App">
       <header></header>
       <main>
-        <h1>Dictionary App</h1>
-        <a href="#" className="btn btn-primary">
-          Hello
-        </a>
+        <Dictionary />
       </main>
       <footer>
         This project was coded by{" "}
