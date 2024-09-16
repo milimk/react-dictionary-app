@@ -6,6 +6,9 @@ function App() {
       <header></header>
       <main>
         <h1>Dictionary App</h1>
+        <a href="#" className="btn btn-primary">
+          Hello
+        </a>
       </main>
       <footer>
         This project was coded by{" "}
