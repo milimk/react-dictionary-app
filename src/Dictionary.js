@@ -27,10 +27,14 @@ export default function Dictionary() {
     <div className="Dictionary">
       <div className="container">
         <div className="row">
-          <div className="col-4 border">
+          <div className="col-4 border searchSection">
             <h2>Dictionary App</h2>
             <form onSubmit={searchWords}>
-              <input type="search" onChange={handleSearch} />
+              <input
+                type="search"
+                onChange={handleSearch}
+                className="searchInput"
+              />
             </form>
           </div>
           <div className="col-8 border">

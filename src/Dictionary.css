@@ -1,3 +1,32 @@
 .Dictionary .container {
-  background-color: aqua;
+  margin-top: 20px;
+}
+
+.Dictionary form {
+  margin-top: 30px;
+}
+
+.Dictionary .searchInput {
+  padding: 10px;
+  width: 100%;
+}
+
+.Dictionary .searchSection {
+  padding: 20px;
+}
+
+.Dictionary .meaning {
+  margin-bottom: 10px;
+  background-color: #9affff;
+  padding: 15px;
+}
+
+.SearchResult {
+  padding: 10px;
+}
+
+.SearchResult .resultWord {
+  background-color: #dbb5ff;
+  margin: 10px;
+  padding: 15px;
 }

@@ -7,15 +7,16 @@ export default function SearchResult(props) {
     return (
       <div className="SearchResult">
         <div className="row">
-          <div className="col border">
-            <h2>{props.results.word} </h2>
+          <div className="col resultWord">
+            <h1>{props.results.word} </h1>
+            <p>{props.results.phonetic}</p>
           </div>
         </div>
         <div className="row">
-          <div className="col border">
+          <div className="col">
             {props.results.meanings.map(function (meaning, index) {
               return (
-                <div key={index}>
+                <div key={index} className="meaning">
                   <Meaning meaning={meaning} />
                 </div>
               );
@@ -23,7 +24,7 @@ export default function SearchResult(props) {
           </div>
         </div>
         <div className="row">
-          <div className="col border">Related Images</div>
+          <div className="col">Related Images</div>
         </div>
       </div>
     );
