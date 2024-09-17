@@ -1,14 +1,26 @@
 .Dictionary .container {
-  margin-top: 20px;
+  margin: 10px auto;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #d3c4c4;
 }
 
-.Dictionary form {
-  margin-top: 30px;
+.Dictionary h2 {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.Dictionary form small {
+  font-size: 12px;
 }
 
 .Dictionary .searchInput {
   padding: 10px;
   width: 100%;
+  border: 1px solid #d3c4c4;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-top: 5px;
 }
 
 .Dictionary .searchSection {
@@ -17,8 +29,10 @@
 
 .Dictionary .meaning {
   margin-bottom: 10px;
-  background-color: #9affff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: #fff9f9;
   padding: 15px;
+  border-radius: 10px;
 }
 
 .SearchResult {
@@ -26,7 +40,23 @@
 }
 
 .SearchResult .resultWord {
-  background-color: #dbb5ff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: #fffbfb;
+  border-radius: 10px;
   margin: 10px;
   padding: 15px;
+}
+
+.SearchResult .resultWord h1 {
+  font-weight: 800;
+}
+
+.Meaning em {
+  color: #70757a;
+}
+
+.Synonyms li {
+  display: inline-block;
+  padding-right: 10px;
+  font-size: 13px;
 }

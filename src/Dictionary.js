@@ -26,18 +26,20 @@ export default function Dictionary() {
   return (
     <div className="Dictionary">
       <div className="container">
+        <h2>React Dictionary App</h2>
         <div className="row">
-          <div className="col-4 border searchSection">
-            <h2>Dictionary App</h2>
+          <div className="col-sm-4 searchSection">
             <form onSubmit={searchWords}>
+              <strong>What word do you want to look up?</strong>
               <input
                 type="search"
                 onChange={handleSearch}
                 className="searchInput"
               />
+              <small>Examples: Sunset, Pizza, Coding </small>
             </form>
           </div>
-          <div className="col-8 border">
+          <div className="col-sm-8">
             <SearchResult results={results} />
           </div>
         </div>
