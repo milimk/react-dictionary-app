@@ -24,7 +24,7 @@ export default function SearchResult(props) {
           </div>
         </div>
         <div className="row">
-          <div className="col">Related Images</div>
+          <div className="col"></div>
         </div>
       </div>
     );
