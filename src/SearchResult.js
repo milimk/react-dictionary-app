@@ -1,14 +1,17 @@
 import React from "react";
+import _ from "lodash";
 import "./Dictionary.css";
 import Meaning from "./Meaning";
 
 export default function SearchResult(props) {
+  let capitalizedWord = _.capitalize(props.results.word);
+
   if (props.results) {
     return (
       <div className="SearchResult">
         <div className="row">
           <div className="col resultWord">
-            <h1>{props.results.word} </h1>
+            <h1>{capitalizedWord} </h1>
             <p>{props.results.phonetic}</p>
           </div>
         </div>

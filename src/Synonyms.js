@@ -1,5 +1,6 @@
 import React from "react";
 import "./Dictionary.css";
+import _ from "lodash";
 
 export default function Synonyms(props) {
   if (props.synonyms) {
@@ -7,7 +8,7 @@ export default function Synonyms(props) {
       <div className="Synonyms">
         {" "}
         {props.synonyms.map(function (synonym, index) {
-          return <li key={index}>{synonym} </li>;
+          return <li key={index}>{_.capitalize(synonym)} </li>;
         })}
       </div>
     );

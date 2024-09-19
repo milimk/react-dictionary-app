@@ -5,13 +5,14 @@ import SearchResult from "./SearchResult";
 import Photos from "./Photos";
 
 export default function Dictionary(props) {
-  let [keyword, setKeyword] = useState("props.defaultWord");
+  let [keyword, setKeyword] = useState(props.defaultWord);
   let [results, setResults] = useState(null);
   let [loaded, setLoaded] = useState(false);
   let [photos, setPhotos] = useState(null);
 
   function handleDictionaryResponse(response) {
     setResults(response.data);
+    setLoaded(true);
   }
 
   function handleImageResponse(response) {
@@ -32,7 +33,6 @@ export default function Dictionary(props) {
   }
 
   function loading() {
-    setLoaded(true);
     searchWords();
   }
 
